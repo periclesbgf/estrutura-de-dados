@@ -67,8 +67,10 @@ int main(){
                 } else if(op == 2){
                         printar(a_pilha);
                         printf("\n");
-                } else {
+                } else if (op == 3) {
                         pop(a_pilha);
+                } else {
+                        return 0;
                 }
         }
 
