@@ -39,8 +39,8 @@ void printar(struct pilha *a_pilha){
 }
 
 void pop(struct pilha *a_pilha){
-        struct node *p;
         if(a_pilha->topo != NULL){
+                struct node *p;
                 p = a_pilha->topo;
                 a_pilha->topo = p->proximo;
                 p->proximo = NULL;
